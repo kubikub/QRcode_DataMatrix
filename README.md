@@ -10,6 +10,6 @@
     <pre><code>pip install -r requirements.txt</code></pre>
     <h2>Run</h2>
     <p>In a Python Env simply run : </p>
-    <pre><code>python3 -m Data_Matrix_Reader_2_CSV.py<code></pre>
+    <pre><code>python3 Data_Matrix_Reader_2_CSV.py<code></pre>
 </body>
 </html>
