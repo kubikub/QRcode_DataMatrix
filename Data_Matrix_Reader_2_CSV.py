@@ -79,31 +79,31 @@ class QrDecode(threading.Thread):
         # check where the camera is connected(external webcam priority (2 to 0 )) and linux or windows (direct show needed for windows)
         if platform == "linux" or platform == "linux2":
 
-            cap = cv2.VideoCapture(0)  # for PC
+            cap = cv2.VideoCapture(0)
             ret, img = cap.read()
             port = 0
             if not ret:
-                cap = cv2.VideoCapture(1)  # for PC
+                cap = cv2.VideoCapture(1)
                 ret, img = cap.read()
                 port = 1
                 if not ret:
-                    cap = cv2.VideoCapture(2)  # for PC
+                    cap = cv2.VideoCapture(2)
                     ret, img = cap.read()
                     port = 2
                     if not ret:
                         sys.exit('there is no camera connected')
             print('camera port is : ', port)
 
-        elif platform == "win32":
-            cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)  # for PC
+        elif platform == "win32":  # for PC
+            cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)
             ret, img = cap.read()
             port = 2
             if not ret:
-                cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)  # for PC
+                cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
                 ret, img = cap.read()
                 port = 1
                 if not ret:
-                    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # for PC
+                    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
                     ret, img = cap.read()
                     port = 0
                     if not ret:
