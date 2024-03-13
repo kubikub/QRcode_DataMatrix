@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <h1>Real Time QR CODE DATA MATRIX READER</h1>
+    <h1>Real Time QR CODE Data Matrix Reader</h1>
     <h2>Description</h2>
     <p>This project use OpenCV and <a href=https://github.com/zxing-cpp/zxing-cpp>Zxing-cpp library</a> and internal or usb camera on Linux or Windows PC.</p>
     <p>When Datamatrix or any compatible with Zxing-cpp QR Code is detected a bouding box is created on the camera picture frame and a thread is writing informations in a CSV File.</p>
