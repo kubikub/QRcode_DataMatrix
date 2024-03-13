@@ -46,7 +46,7 @@ class PrintThread(threading.Thread):  # manipulation du résultat du scan
             to_publish_data = data
             my_mutex.release()
             if to_publish_data and previous_data != to_publish_data:
-                print("cool data found : ", to_publish_data, date, timeRN)
+                print(f"cool new data found : {to_publish_data} , {date}, {timeRN}")
                 previous_data = to_publish_data
             # else:
             #     last_data=''
