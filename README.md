@@ -9,8 +9,7 @@
     <p>This project requires Python 3.11. After cloning the repository, install the necessary dependencies with the following command:</p>
     <pre><code>pip install -r requirements.txt</code></pre>
     <h2>Run</h2>
-    <p>In a Python Env simply run : python3 -m Data_Matrix_Reader_2_CSV.py:</p>
-    
-    
+    <p>In a Python Env simply run : </p>
+    <p>python3 -m Data_Matrix_Reader_2_CSV.py</p>   
 </body>
 </html>
