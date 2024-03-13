@@ -56,12 +56,12 @@ class PrintThread(threading.Thread):  # manipulation du résultat du scan
             #     last_data=''
 
             # **** This location is where we are adding the ability for the code to capture the Data and write it to a Text file
-            # For this here we are writing the Information to Database.csv File located in the same directory (the desktop) as this code.  
+            # For this here we are writing the Information to Database.csv File located in the same directory (the desktop) as this code.
                 filename = date + '_Database.csv'
                 with open(filename, mode='a') as csvfile:
 
                     csvfileWriter = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
-                    csvfileWriter.writerow([to_publish_data + date + "_" + timeRN])
+                    csvfileWriter.writerow([to_publish_data + ', ' + date + "_" + timeRN])
 
 
 class QrDecode(threading.Thread):
