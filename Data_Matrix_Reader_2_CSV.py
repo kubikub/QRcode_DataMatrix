@@ -4,10 +4,6 @@
 
 # @author: frank.kubler
 
-# for exe creation :
-#    C:\Users\franck.kubler\anaconda3\envs\labelme_datamatrix\Scripts\pyinstaller.exe "c:/Users/franck.kubler/OneDrive 
-# - 4iTEC/Documents/GitHub/QRCode_DataMatrix_Scripts/Data_Matrix_reader_Zxing_lib_With_CSV_thread.py" --onefile
-
 import cv2
 import csv
 import numpy as np
