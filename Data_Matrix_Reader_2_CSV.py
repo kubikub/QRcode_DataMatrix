@@ -147,7 +147,7 @@ class QrDecode(threading.Thread):
                     cv2.polylines(img, [rectangle], False, (0, 255, 0), thickness=2)
                     # cv2.putText(img, result.text, (x1, y1 - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
                     cv2.putText(img, result.text, (x[0], y[0] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-            # Below will display the live camera feed to the Desktop on Raspberry Pi OS OR WINDOWS  preview
+            # Below will display the live camera feed to the Desktop on Raspberry Pi OS LINUX OR WINDOWS  preview
             cv2.imshow("code detector / press esc to exit()", img)
 
             # At any point if you want to stop the Code all you need to do is press 'q' on your keyboard
