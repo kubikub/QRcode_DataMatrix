@@ -156,7 +156,7 @@ class QrDecode(threading.Thread):
 
             # At any point if you want to stop the Code all you need to do is press 'q' on your keyboard
             if (cv2.waitKey(1) == 27):  # 27 : key 'esc' other posibility : (cv2.waitKey(1) ==ord("q")
-                keep_going = False    
+                keep_going = False
         # When the code is stopped the below closes all the applications/windows that the above has created
         cap.release()
         cv2.destroyAllWindows()
